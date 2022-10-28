@@ -57,23 +57,54 @@ header .listaMenu{
     color: rgb(0, 191, 255);
     text-decoration: none;
 }
+/*Estilo banner principal*/
+#banner{
+    width: 100%;
+}
+#banner .nombreFoto{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3em 0em 1em 1.5em;
+
+}
+#banner .nombreFoto{
+    display:flex;
+    justify-content: space-between;
+
+}
+#banner .nombreFoto p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-weight: bold;
+   
+}
+#banner .nombreFoto p strong{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(0, 175, 234);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+#banner .nombreFoto img{
+    width: 55%;
+    height: auto;
+
+}
 
 /*Estilos seccion Presentacion*/
 
 #presentacion {
     display: flex;
     flex-direction: column;
-   justify-content: center;
-   align-items: center;
+    justify-content: center;
+    align-items: center;
     color: white;
     padding: 2em;
 }
 
-#presentacion img{
-    width: 35%;
-    height: auto;
-    
-}
+
 #presentacion h2{
     color:grey;
     font-size: 1.3em;
@@ -83,7 +114,7 @@ header .listaMenu{
 }
 
 
-strong, .redesDeContacto a{
+.redesDeContacto a{
     color: rgb(0, 191, 255);
     font-weight: bold;
     text-decoration: none;
