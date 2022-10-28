@@ -38,7 +38,7 @@ header #menu{
     transition: all 0.5s ease;
 }
 header #menu.visible{
-    height: 35vh;
+    height: 25vh;
 }
 
 
@@ -51,11 +51,11 @@ header .listaMenu{
 
 .listaMenu li{
     list-style: none;
-    margin: 1.5em 0;
+    margin: 1em 0;
 }
 
 .listaMenu a{
-    font-size: 1.3em;
+    font-size: 1em;
     font-weight: bold;
     color: rgb(0, 191, 255);
     text-decoration: none;
@@ -227,23 +227,35 @@ header .listaMenu{
 }
 /*Estilos para la seccion proyectos*/
 #proyectos{
+  
+    align-items: center;
     background-color: darkslategray;
     padding:2em 0;
 
 }
 #proyectos h1{
+    
+
     text-align: center;
-    padding-bottom:1em 0;
+    padding-bottom:2em;
+}
+
+.misProyectos{
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 }
 
 .juegoAhorcado, .encriptador{
-    width: 100%;
+    width: 80%;
     padding: 0 1.3em;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .juegoAhorcado h2, .encriptador h2{
     color: white;
     margin-bottom: 00.5em;
@@ -255,13 +267,14 @@ header .listaMenu{
 
 .juegoAhorcado .botones, .encriptador .botones{
     display: flex;
+    margin-bottom: 1.5em;
 }
 .juegoAhorcado button,.encriptador button{
     background-color: grey;
     color:white;
     font-size: 0.9em;
     font-weight: bold;
-    padding: 0.5em;
+    padding: 0.5em ;
     border:none;
     border-radius: 5px;
     margin: 1em;
@@ -273,9 +286,9 @@ header .listaMenu{
    
 }
 
-#proyectos img{
-    width: 80%;
-    margin: 1.3em;
+#proyectos .misProyectos img{
+    width: 100%;
+    padding-bottom:1em;
     border-radius: 3px;
 }
 
@@ -284,6 +297,8 @@ header .listaMenu{
 #contacto{
     width: 100%;
     padding: 2em 0;
+    display: flex;
+    justify-content: center;
 }
 
 #contacto h1{
@@ -299,7 +314,7 @@ header .listaMenu{
 #contacto .contact{
   padding: 1.5em;
   background-color: gray;
-   overflow: hidden;
+ 
     
 }
 
@@ -364,6 +379,12 @@ header .listaMenu{
 
 
  @media  screen and (min-width: 720px) {
+    body{
+        font-size: 1.2em;
+    }
+    header .logo{
+        font-size: 2em;
+    }
     
     header #burger{
      display: none;
@@ -386,7 +407,7 @@ header .listaMenu{
     }
     
     .listaMenu a{
-        font-size: 1.3em;
+        font-size: 1.5em;
         font-weight: bold;
         color: rgb(0, 191, 255);
         text-decoration: none;
@@ -401,28 +422,100 @@ header .listaMenu{
     
     
     #banner .nombreFoto p{
-       
-        color: white;
-        font-size: 1.3em ;
+        padding-left: 2em;
+        font-size: 2em ;
        
     }
     
     #banner .nombreFoto  strong{
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 2.5em;
-        font-weight: bold;
-        background: linear-gradient(50deg, rgb(113, 219, 255),rgb(0, 136, 255));
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-      
-        
+
     }
-    
-    
     
     #banner .nombreFoto img{
         width: 35%;
         height: auto;
+
+    }
+
+    #presentacion  p{
+        padding: 0 5em;
+
+    }
+    #skills li:hover{
+        transition: 0.5s;
+        border-bottom: 2px solid white;
+    }
+    #skills li img{
+        
+
+        width: 25%;
+       
+    }
+   
+
+
+  
+    #formacion{
+        padding: 5em 0;
+    }
+    
+    #formacion li{
+        width: 25%;
+        margin:1.5em 0.5em;
+        
+    }
+    #formacion li:hover{
+        transition: 1s;
+       color:white;
+
+        
+    }
+    
+    #formacion img{
+        width: 60%;
+    }
+    #formacion img:first-child{
+        width: 50%;
+    }
+
+  
+ 
+    .misProyectos{
+       display: flex;
+        flex-flow: row;
+       
+    }
+
+    .misProyectos .juegoAhorcado, .encriptador{
+        width: 30%;
     
     }
+    
+
+
+    
+    .juegoAhorcado .botones, .encriptador .botones{
+        display: flex;
+    }
+   
+    
+    #proyectos img{
+        width: 100%;
+       
+       
+    }
+
+  
+    #contacto .contenedor {
+        width: 60%;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+
+    footer .nombreAnio{
+     
+       padding: 2em 5em;
+     }
  }
