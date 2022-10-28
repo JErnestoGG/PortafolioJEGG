@@ -1,17 +1,19 @@
 *{   margin: 0; padding: 0; box-sizing: border-box;}
 
+html{
+    scroll-behavior: smooth;
+}
 body{
     width: 100%;
     background-color: rgb(36, 50, 62);
     font-family: sans-serif;
-
 }
 
 
 header{
     width: 100%;
     background-color: darkslategray;
-    padding: 1em;
+    padding: 0.7em;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between ;
@@ -29,13 +31,14 @@ header #burger{
     background-color: darkslategray;
 }
 header #menu{
+   
     width: 100%;
     height:0;
     overflow: hidden;
     transition: all 0.5s ease;
 }
 header #menu.visible{
-    height: 30vh;
+    height: 35vh;
 }
 
 
@@ -65,26 +68,30 @@ header .listaMenu{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3em 0em 1em 1.5em;
-
-}
-#banner .nombreFoto{
-    display:flex;
     justify-content: space-between;
+    padding: 2.5em 0em 1em 1.5em;
 
 }
+
+
 #banner .nombreFoto p{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
     color: white;
-    font-weight: bold;
+    padding-bottom: 2em ;
    
 }
-#banner .nombreFoto p strong{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(0, 175, 234);
-    font-size: 1.5em;
+
+#banner .nombreFoto  strong{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.5em;
     font-weight: bold;
+    background: linear-gradient(50deg, rgb(113, 219, 255),rgb(0, 136, 255));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  
+    
 }
+
 
 
 #banner .nombreFoto img{
@@ -128,6 +135,8 @@ header .listaMenu{
     background-color: darkslategray;
     width: 100%;
     padding: 2em 0;
+    scroll-behavior: smooth;
+    
 }
 
 #skills h1{
@@ -151,6 +160,8 @@ header .listaMenu{
     align-items: center;
     font-weight: bold;
     margin:1em;
+    padding-bottom: 0.3em;
+    border-bottom: 2px solid rgb(20, 58, 91);
 }
 
 #skills li img{
@@ -165,8 +176,9 @@ header .listaMenu{
   
 }
 #skills li h2{
-    color:rgb(12, 38, 61);
+    color:darkgray;
     font-weight: bold;
+    
 }
 
 /*Estilos para la seccion formacion*/
@@ -299,13 +311,13 @@ header .listaMenu{
 }
 .contact label{
     font-weight: bold;
-   color: rgb(36, 50, 62);
+    color: rgb(36, 50, 62);
 }
 
 .contact input:not([type="submit"]), .contact textarea {
     color: aliceblue;
     border: none;
-    margin-bottom: 0.5em;
+    margin-bottom: 2em;
     border-bottom: 3px solid rgb(36, 50, 62);
     outline: none;
     background-color: gray;
@@ -314,7 +326,6 @@ header .listaMenu{
 .contact textarea{
     font-family: Roboto, sans-serif;
     min-height: 7em;
-    border-top: 3px solid rgb(36, 50, 62);
 }
 
 .contact input[type="submit"]{
@@ -326,6 +337,7 @@ header .listaMenu{
    border-radius: 5px;
    width: 40%;
    text-align: center;
+   
 }
 
 .contact input[type="submit"]:hover{
@@ -346,5 +358,71 @@ header .listaMenu{
     display: flex;
     color: aliceblue;
     justify-content: space-between;
-    padding: 0 2em 1.5em;
+   padding: 2em 1.5em;
+ }
+
+
+
+ @media  screen and (min-width: 720px) {
+    
+    header #burger{
+     display: none;
+    }
+
+    header #menu{
+        overflow: visible;
+        height: 5vh;
+
+    }
+    header .listaMenu{
+        display:flex;
+        flex-direction: row ;
+        align-content:  center;
+    
+    }
+    
+    .listaMenu li{
+        margin: 0 1em;
+    }
+    
+    .listaMenu a{
+        font-size: 1.3em;
+        font-weight: bold;
+        color: rgb(0, 191, 255);
+        text-decoration: none;
+    }
+
+  
+    #banner .nombreFoto{
+       
+        padding: 1em 0 2em 5em;
+    
+    }
+    
+    
+    #banner .nombreFoto p{
+       
+        color: white;
+        font-size: 1.3em ;
+       
+    }
+    
+    #banner .nombreFoto  strong{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 2.5em;
+        font-weight: bold;
+        background: linear-gradient(50deg, rgb(113, 219, 255),rgb(0, 136, 255));
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+      
+        
+    }
+    
+    
+    
+    #banner .nombreFoto img{
+        width: 35%;
+        height: auto;
+    
+    }
  }
