@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
     <title>Juan García-Portafolio</title>
 </head>
 <body>
@@ -14,18 +15,18 @@
     
            <p class="logo">JernestoGG</p>
            
-           <button class="burger">
-                <svg  xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                width="24" height="24"
+           <button id="burger">
+                <svg  xmlns="http://www.w3.org/2000/svg" 
+                width="30" height="30"
                 viewBox="0 0 24 24"
-                style=" fill:#ffffff;"><path d="M 3 5 A 1.0001 1.0001 0 1 0 3 7 L 21 7 A 1.0001 1.0001 0 1 0 21 5 L 3 5 z M 3 11 A 1.0001 1.0001 0 1 0 3 13 L 21 13 A 1.0001 1.0001 0 1 0 21 11 L 3 11 z M 3 17 A 1.0001 1.0001 0 1 0 3 19 L 21 19 A 1.0001 1.0001 0 1 0 21 17 L 3 17 z"></path></svg>
+                style=" fill:#ffffff;">]<path d="M 3 5 A 1.0001 1.0001 0 1 0 3 7 L 21 7 A 1.0001 1.0001 0 1 0 21 5 L 3 5 z M 3 11 A 1.0001 1.0001 0 1 0 3 13 L 21 13 A 1.0001 1.0001 0 1 0 21 11 L 3 11 z M 3 17 A 1.0001 1.0001 0 1 0 3 19 L 21 19 A 1.0001 1.0001 0 1 0 21 17 L 3 17 z"></path></svg>
             </button>
 
-            <nav class="menu"  >
+            <nav id="menu"  >
                 <ul class="listaMenu">
-                    <li><a href="">Skills</a></li> 
-                    <li> <a href="">Formación</a></li> 
-                    <li><a href="">Proyectos</a></li> 
+                    <li><a href="#skills">Skills</a></li> 
+                    <li> <a href="#formacion">Formación</a></li> 
+                    <li><a href="#proyectos">Proyectos</a></li> 
                     <li><a href="">Contácto</a></li>
                 </ul>
             </nav>
@@ -36,93 +37,84 @@
         <section id="presentacion">
             <img src="images/fotoPerfil.png" alt="">
             <h2>Hola, me llamo <strong> Juan Ernesto García</strong> y soy un <strong> Desarrollador Frontend</strong> </h2>
-
+            <h1> Sobre mí</h1>
             <p>Estudiante de Sistemas de Computación, en la Universidad Francisco Gavidia. Estoy formándome en Desarrollo
-                Web y actualmente participo en el proyecto Oracle ONE en Alura Latam.  </p>
+                Web y actualmente participo en el proyecto Oracle ONE en Alura Latam. <br>
+                Me gusta resolver problemas aplicando los conocimientos de las tecnologías que más me apasionan.
+            </p>
                 
             <div class="redesDeContacto">
                 <nav>
                     <a href="">Email</a>
                     <a href="">Linkedin</a>
                     <a href="">GitHub</a>
-                    <a href="">Currículum</a> 
-                   </nav>
+                </nav>
 
             </div>
         </section>
 
-        <section class="sobreMi">
-            <h1> Sobre mí</h1>
-            <p>Actualmente enfocado en el mundo del desarrollo Frontend,  en la creacion de sitios y
-                aplicaciones web responsivas. Estoy cursando la Licenciatura de Sistemas de Computación, lo cual me
-                permite mantenerme constante aprendizaje y crecer profesionalmente. <br>
-                
-                Me gusta resolver problemas aplicando los conociminetos de las tecnologias que más me apapsionan.
-                Soy fiel creyente de  quue el trabajo en equipo y orientado a resultados son vitales para la obtencion 
-                de objetivos personales y en las organizaciones.
-                 </p>
-
-        </section>
-
-        <section class="skills">
-            <div class="contenedor">
-                <div class="html">
+        <section id="skills">
+            <h1>Habilidades técnicas</h1>
+            <ul class="listaSkills">
+                <li class="html">
                     <img src="images/logoHTML.png" alt="">
                     <h2>HTML5</h2>
-                </div>
-                <div class="css">
+                </li>
+                <li class="css">
                     <img src="images/logoCSS.png" alt="">
                     <h2>CSS3</h2>
-                </div>
-                <div class="js">
+                </li>
+                <li class="js">
                         <img src="images/logoJS.png" alt="">
                         <h2>Javascript</h2>
-                </div>
-                <div class="nodejs">
+                </li>
+                <li class="nodejs">
                         <img src="images/logoNodeJS.png" alt="">
                         <h2>Node JS</h2>
-                </div>
-                <div class="react">
+                </li>
+                <li class="react">
                         <img src="images/logoReact.png" alt="">
                         <h2>React JS</h2>
-                </div>
-                <div class="git">
+                </li>
+                <li class="git">
                         <img src="images/logoGit.png" alt="">
                         <h2>Git</h2>
-                </div>
+                </li>
 
-            </div>
+            </ul>
         </section>
 
-        <section class="formacion">
-            <div class="contenedor">
-                <h1>Formación </h1>
-                <div class="ufg">
-                    <img src="images/logoUFG.png" alt="">
-                    <h2>Lic. Sistemas de Computación Administrativa</h2>
-                    <h3>2015 - Actualidad</h3>
-                </div>
+        <section id="formacion">
+        
+            <h1>Formación </h1>
+                <ul class="listaFormacion">
+                    <li class="ufg">
+                        <img src="images/logoUFG.png" alt="">
+                        <h2>Sistemas de Computación</h2>
+                        <h3>2015 - Actualidad</h3>
+                    </li>
 
-                <div class="alura">
-                    <img src="images/alura.png" alt="">
-                    <h2>Formación en Front End</h2>
-                    <h3>2022 - Actualidad</h3>
-                </div>
+                    <li class="alura">
+                        <img src="images/alura.png" alt="">
+                        <h2>Formación en Front End</h2>
+                        <h3>2022 - Actualidad</h3>
+                    </li>
 
-                <div class="meta">
-                    <img src="images/logo-meta.png" alt="">
-                    <h2>React Básico</h2>
-                    <h3>2022</h3>
-                </div>
-            </div>
+                    <li class="meta">
+                        <img src="images/logo-meta.png" alt="">
+                        <h2>React Básico</h2>
+                        <h3>2022</h3>
+                    </li>
+                 </ul>
         </section>
 
-        <section class="proyectos">
-            <div class="contenedor">
+        <section id="proyectos">
+            <div id="contenedor">
                 <h1>Proyectos</h1>
                     <div class="juegoAhorcado">
                         <img src="images/projectsImajes/ahorcadoGame.PNG" alt="">
                         <h2>Juego de Ahorcado con HTML, CSS y Javascript</h2>
+                        <h3>Desafío 2 en la formación Oracle ONE Alura Latam</h3>
                         <div class="botones">
                             <form target="_blank" action="https://jernestogg.github.io/Desafio2-AhorcadoGameALURA/">
                                 <button >Ver demo</button>
@@ -136,6 +128,8 @@
                     <div class="encriptador">
                         <img src="images/projectsImajes/encriptador.PNG" alt="">
                         <h2>Codificador de texto realizado con HTML, CSS y Javascript</h2>
+                        <h3>Desafío 1 en la formación Oracle ONE Alura Latam</h3>
+                        
                         <div class="botones">
                             <form target="_blank" action="https://jernestogg.github.io/Desafio1-EncriptadorALURA/">
                                 <button>Ver demo</button>
@@ -148,12 +142,11 @@
             </div>
         </section>
 
-        <section class="contacto">
+        <section id="contacto">
             <div class="contenedor">
                 <h1>Contacto</h1>
-                <p>Si te interesa que hablemos, por favor completa el siguiente formulario y hablemos <br>
-                Estoy deseando trabajar contigo.</p>
-                <form action="">
+                <p>Si te interesa que hablemos, por favor, completa el siguiente formulario. Estoy deseando trabajar contigo.</p>
+                <form action="" class="contact">
                     <label for="nombre">Nombre:</label>
                     <input id="nombre" type="text">
 
@@ -164,7 +157,7 @@
                     <input id="asunto" type="text">
 
                     <label for="msj">Mensaje:</label>
-                    <input id="msj" type="text">
+                    <textarea id="msj" ></textarea>
 
                     <input type="submit" value="Enviar">
                 </form>
@@ -179,13 +172,17 @@
                 <a href="">Email</a>
                 <a href="">Linkedin</a>
                 <a href="">GitHub</a>
-                <a href="">Currículum</a> 
                </nav>
 
         </div>
-        <h2>JErnestoGG - 2022</h2>
+        <div class="nombreAnio">
+            <h2>JErnestoGG</h2>
+            <h2>2022</h2>
+        </div>
+        
             
     </footer>
     </main>
+
 </body>
 </html>

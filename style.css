@@ -1,8 +1,9 @@
 *{   margin: 0; padding: 0; box-sizing: border-box;}
 
 body{
+    width: 100%;
     background-color: rgb(36, 50, 62);
-    font-family: Roboto, sans-serif;
+    font-family: sans-serif;
 
 }
 
@@ -11,7 +12,6 @@ header{
     width: 100%;
     background-color: darkslategray;
     padding: 1em;
-
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between ;
@@ -19,19 +19,22 @@ header{
 
 }
 
-.logo{
+.logo, h1{
     color: aliceblue;
-    font-size: 1.5em;
-    font-weight: bold;
-    
+    font-size: 1.3em;
+    font-weight: bold;  
 }
-
-header .menu{
+header #burger{
+    border:none;
+    background-color: darkslategray;
+}
+header #menu{
     width: 100%;
     height:0;
     overflow: hidden;
+    transition: all 0.5s ease;
 }
-header .menu.visible{
+header #menu.visible{
     height: 30vh;
 }
 
@@ -55,29 +58,262 @@ header .listaMenu{
     text-decoration: none;
 }
 
-
+/*Estilos seccion Presentacion*/
 
 #presentacion {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+   justify-content: center;
+   align-items: center;
     color: white;
+    padding: 2em;
 }
 
 #presentacion img{
     width: 35%;
     height: auto;
-    margin: 15px;
     
 }
 #presentacion h2{
-    color: rgb(0, 191, 255);
+    color:grey;
     font-size: 1.3em;
-    margin-bottom: 15px;
+}
+#presentacion h2, p, .redesDeContacto{
+    margin: 1em 0;
 }
 
-strong{
-    color: rgb(218, 119, 19);
+
+strong, .redesDeContacto a{
+    color: rgb(0, 191, 255);
+    font-weight: bold;
+    text-decoration: none;
+}
+.redesDeContacto a{
+    margin: 0 .5em;
 }
 
+/*Estilos seccion Habilidades*/
+#skills{
+    background-color: darkslategray;
+    width: 100%;
+    padding: 2em 0;
+}
+
+#skills h1{
+    text-align: center;
+    padding-bottom: 1em;
+}
+#skills ul {
+    
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+#skills li{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    margin:1em;
+}
+
+#skills li img{
+    
+    transition: 0.8s;
+    width: 75px;
+    height: auto;
+}
+#skills li img:hover{
+    transition: 0.8s;
+    transform: scale(1.3);
+  
+}
+#skills li h2{
+    color:rgb(12, 38, 61);
+    font-weight: bold;
+}
+
+/*Estilos para la seccion formacion*/
+#formacion{
+    width: 100%;
+    padding: 2em 0;
+}
+
+#formacion h1{
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+#formacion ul{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    width: 100%;
+}
+
+
+#formacion li{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 3px solid whitesmoke;
+    margin:1.5em 0;
+    padding: 1.5em;
+    background-color: gray;
+}
+#formacion li:first-child{
+    padding: 1.2em;
+}
+
+
+#formacion img{
+    width: 80%;
+}
+
+#formacion li h2{
+    padding-bottom: 0.3em;
+}
+/*Estilos para la seccion proyectos*/
+#proyectos{
+    background-color: darkslategray;
+    padding:2em 0;
+
+}
+#proyectos h1{
+    text-align: center;
+    padding-bottom:1em 0;
+}
+
+.juegoAhorcado, .encriptador{
+    width: 100%;
+    padding: 0 1.3em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.juegoAhorcado h2, .encriptador h2{
+    color: white;
+    margin-bottom: 00.5em;
+}
+.juegoAhorcado h3, .encriptador h3{
+    font-weight: bold;
+    color:rgb(12, 38, 61);
+}
+
+.juegoAhorcado .botones, .encriptador .botones{
+    display: flex;
+}
+.juegoAhorcado button,.encriptador button{
+    background-color: grey;
+    color:white;
+    font-size: 0.9em;
+    font-weight: bold;
+    padding: 0.5em;
+    border:none;
+    border-radius: 5px;
+    margin: 1em;
+    box-shadow: 3px 3px 3px  rgb(53, 53, 53);
+}
+.juegoAhorcado button:hover,.encriptador button:hover{
+    background-color: rgb(48, 48, 48);
+    
+   
+}
+
+#proyectos img{
+    width: 80%;
+    margin: 1.3em;
+    border-radius: 3px;
+}
+
+/* Estilos seccion Contacto*/
+
+#contacto{
+    width: 100%;
+    padding: 2em 0;
+}
+
+#contacto h1{
+    text-align: center;
+    padding-bottom: 1em;
+
+}
+#contacto p{
+   color:whitesmoke;
+   padding-left: 1.2em;
+
+}
+#contacto .contact{
+  padding: 1.5em;
+  background-color: gray;
+   overflow: hidden;
+    
+}
+
+.contact label, .contact input, .contact textarea {
+    display: block;
+    width: 100%;
+    margin-bottom:0.5em;
+    font-size: 1em;
+}
+.contact label{
+    font-weight: bold;
+   color: rgb(36, 50, 62);
+}
+
+.contact input:not([type="submit"]), .contact textarea {
+    color: aliceblue;
+    border: none;
+    margin-bottom: 0.5em;
+    border-bottom: 3px solid rgb(36, 50, 62);
+    outline: none;
+    background-color: gray;
+}
+
+.contact textarea{
+    font-family: Roboto, sans-serif;
+    min-height: 7em;
+    border-top: 3px solid rgb(36, 50, 62);
+}
+
+.contact input[type="submit"]{
+   background-color: rgb(36, 50, 62);
+   color:white;
+   font-weight: bold;
+   padding: 1em;
+   border:none;
+   border-radius: 5px;
+   width: 40%;
+   text-align: center;
+}
+
+.contact input[type="submit"]:hover{
+    background-color: rgb(78, 128, 171);
+    
+ }
+
+ /*Estilos para el footer*/
+ 
+ footer{
+    width: 100%;
+ }
+ footer .redesDeContacto{
+    display: flex;
+    justify-content: center;
+ }
+ footer .nombreAnio{
+    display: flex;
+    color: aliceblue;
+    justify-content: space-between;
+    padding: 0 2em 1.5em;
+ }
