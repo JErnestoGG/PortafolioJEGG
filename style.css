@@ -242,7 +242,7 @@ header .listaMenu{
 
 .misProyectos{
 display:flex;
-flex-direction: column;
+flex-flow: column;
 justify-content: center;
 align-items: center;
 }
@@ -483,12 +483,12 @@ align-items: center;
  
     .misProyectos{
        display: flex;
-        flex-flow: row;
+        flex-direction: row;
        
     }
 
     .misProyectos .juegoAhorcado, .encriptador{
-        width: 30%;
+        width: 40%;
     
     }
     

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <title>Juan García-Portafolio</title>
 </head>
 <body>
@@ -134,7 +135,7 @@
 
                     <div class="encriptador">
                         <img src="images/projectsImajes/encriptador.PNG" alt="">
-                        <h2>Codificador de texto realizado con HTML, CSS y Javascript</h2>
+                        <h2>Codificador de texto con HTML, CSS y Javascript</h2>
                         <h3>Desafío 1 en la formación Oracle ONE Alura Latam</h3>
                         
                         <div class="botones">
@@ -156,16 +157,16 @@
                 <p>Si te interesa que hablemos, por favor, completa el siguiente formulario. Estoy deseando trabajar contigo.</p>
                 <form action="" class="contact">
                     <label for="nombre">Nombre:</label>
-                    <input id="nombre" type="text">
+                    <input id="nombre" type="text" maxlength="50" required>
 
                     <label for="mail">Correo:</label>
-                    <input id="mail" type="text">
+                    <input id="mail" type="text" maxlength="50" required>
 
                     <label for="asunto">Asunto:</label>
-                    <input id="asunto" type="text">
+                    <input id="asunto" type="text" maxlength="50" required>
 
                     <label for="msj">Mensaje:</label>
-                    <textarea id="msj" ></textarea>
+                    <textarea id="msj" ></textarea maxlength="300" required>
 
                     <input id="btnEnviar"type="submit" value="Enviar">
                 </form>

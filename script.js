@@ -19,25 +19,45 @@ boton.onclick=aggClase;
 const validarForm= function (){
 
     if( txtName.value === ""  || (txtName.value.match(/^[a-zñ]$/i))){
-        alert(`Ingrese un nombre válido`);
+        swal({
+            title: "Advertencia",
+            text: "Por favor, ingrese su nombre",
+            icon: "warning",
+            dangerMode: true,
+          })
         txtName.focus();
         return false;
     }
 
     else if(!validarMail(txtMail.value)){
-        alert(`Ingrese un correo válido`);
+        swal({
+            title: "Advertencia",
+            text: "Por favor, ingrese un correo válido",
+            icon: "warning",
+            dangerMode: true,
+          })
         txtCorreo.focus();
         return false;
     }
 
-    if( txtAsunto.value === ""  || (txtAsunto.value.match(/^[a-zñ]$/i))){
-        alert(`Ingrese un asunto válido`);
+    else if( txtAsunto.value === ""  || (txtAsunto.value.match(/^[a-zñ]$/i))){
+        swal({
+            title: "Advertencia",
+            text: "Por favor, un asunto",
+            icon: "warning",
+            dangerMode: true,
+          })
         txtName.focus();
         return false;
     }
 
-    if( txtMsj.value === ""  || (txtName.Msj.match(/^[a-zñ]$/i))){
-        alert(`Ingrese un mensaje válido`);
+    else if( txtMsj.value === ""  || (txtName.Msj.match(/^[a-zñ]$/i))){
+        swal({
+            title: "Advertencia",
+            text: "Por favor, ingrese su mensaje",
+            icon: "warning",
+            dangerMode: true,
+          })
         txtName.focus();
         return false;
     }
